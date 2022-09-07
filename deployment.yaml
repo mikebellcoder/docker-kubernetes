@@ -4,7 +4,7 @@ metadata:
   name: second-app-deployment
   namespace: first-app-prod
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: second-app
@@ -18,4 +18,4 @@ spec:
       restartPolicy: Always
       containers:
         - name: second-node
-          image: homey/kub-first-app:4
+          image: homey/kub-first-app:12
